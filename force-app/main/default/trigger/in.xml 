@@ -1,0 +1,64 @@
+
+<trigger>
+  <name>LoanApplicantCreditCheck</name>
+  <description>Trigger for generating a credit check and pre-qualification report for a loan applicant</description>
+  <event>LoanApplicationSubmitted</event>
+  <conditions>
+    <condition>
+      <description>Loan applicant submitted a new loan application</description>
+      <expression>loanApplication.status == 'Submitted'</expression>
+    </condition>
+  </conditions>
+  <actions>
+    <action>
+      <description>Perform credit check on the loan applicant</description>
+      <type>CreditCheck</type>
+      <parameters>
+        <parameter>
+          <name>CreditScoreSource</name>
+          <value>ReliableSource</value>
+        </parameter>
+      </parameters>
+    </action>
+    <action>
+      <description>Evaluate loan applicant's financial history</description>
+      <type>FinancialHistoryEvaluation</type>
+      <parameters>
+        <parameter>
+          <name>Criteria</name>
+          <value>Income, Debts, PreviousLoanRepayments</value>
+        </parameter>
+      </parameters>
+    </action>
+    <action>
+      <description>Assess loan applicant's creditworthiness</description>
+      <type>CreditworthinessAssessment</type>
+      <parameters>
+        <parameter>
+          <name>Criteria</name>
+          <value>CreditScore, FinancialHistory</value>
+        </parameter>
+      </parameters>
+    </action>
+    <action>
+      <description>Generate credit check and pre-qualification report</description>
+      <type>ReportGeneration</type>
+      <parameters>
+        <parameter>
+          <name>ReportType</name>
+          <value>CreditCheckAndPreQualification</value>
+        </parameter>
+      </parameters>
+    </action>
+    <action>
+      <description>Make the report accessible to the loan applicant</description>
+      <type>Accessibility</type>
+      <parameters>
+        <parameter>
+          <name>AccessibilityType</name>
+          <value>OnlineAccount, BankStaffMemberRequest</value>
+        </parameter>
+      </parameters>
+    </action>
+  </actions>
+</trigger>
