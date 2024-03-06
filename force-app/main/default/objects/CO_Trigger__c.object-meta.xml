@@ -1,0 +1,130 @@
+Here is the metadata XML for the custom objects used in the given trigger:
+
+1. Loan_Offer__c:
+
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Loan Offer</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <label>Loan Offer</label>
+    <nameField>
+        <label>Loan Offer Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Loan Offers</pluralLabel>
+    <sharingModel>ReadWrite</sharingModel>
+    <fields>
+        <fullName>Accepted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates if the loan offer has been accepted</description>
+        <externalId>false</externalId>
+        <label>Accepted</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Applicant__c</fullName>
+        <description>Related applicant for the loan offer</description>
+        <externalId>false</externalId>
+        <label>Applicant</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Loan Offer Applicant</relationshipLabel>
+        <relationshipName>Loan_Offer_Applicant</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loan_Amount__c</fullName>
+        <description>Loan amount</description>
+        <externalId>false</externalId>
+        <label>Loan Amount</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Interest_Rate__c</fullName>
+        <description>Loan interest rate</description>
+        <externalId>false</externalId>
+        <label>Interest Rate</label>
+        <precision>5</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Repayment_Period__c</fullName>
+        <description>Loan repayment period in months</description>
+        <externalId>false</externalId>
+        <label>Repayment Period</label>
+        <precision>5</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loan__c</fullName>
+        <description>Related loan for the loan offer</description>
+        <externalId>false</externalId>
+        <label>Loan</label>
+        <referenceTo>Loan__c</referenceTo>
+        <relationshipLabel>Loan Offer Loan</relationshipLabel>
+        <relationshipName>Loan_Offer_Loan</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>
+
+2. Loan__c:
+
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Loan</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <label>Loan</label>
+    <nameField>
+        <label>Loan Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Loans</pluralLabel>
+    <sharingModel>ReadWrite</sharingModel>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>Loan status</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>
+
+Please note that the XML provided assumes that the referenced objects (Contact and Loan__c) already exist in the Salesforce org.

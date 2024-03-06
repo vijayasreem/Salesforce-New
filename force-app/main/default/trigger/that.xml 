@@ -1,0 +1,15 @@
+<Trigger>
+  <UserStory>Loan Offer Acceptance: Electronic and Physical Options for Accepting Loan Terms</UserStory>
+  <AcceptanceCriteria>
+    <Criteria>The loan offer should clearly state the loan amount, interest rate, and repayment period.</Criteria>
+    <Criteria>The loan offer should include any additional requirements or conditions that need to be fulfilled before the loan can be disbursed.</Criteria>
+    <Criteria>The loan offer should be provided to the applicant in a timely manner after the loan application and document verification process.</Criteria>
+    <Criteria>The loan offer should be accessible to the applicant through both electronic means (such as email or the bank's website) and physical documents.</Criteria>
+    <Criteria>The loan offer should be presented in a clear and comprehensive manner, ensuring that the applicant can easily understand all terms and conditions.</Criteria>
+    <Criteria>The applicant should have the option to accept the loan offer either electronically (by clicking a designated button or link) or by signing physical documents.</Criteria>
+    <Criteria>If the loan offer is accepted electronically, the system should record the applicant's acceptance and update the loan status accordingly.</Criteria>
+    <Criteria>If the loan offer is accepted through physical documents, the applicant should be provided with clear instructions on how to sign and return the documents to the bank.</Criteria>
+    <Criteria>The loan offer acceptance process should be secure and protect the applicant's sensitive information.</Criteria>
+    <Criteria>The bank should promptly acknowledge the applicant's acceptance of the loan offer and provide a confirmation of the acceptance.</Criteria>
+  </AcceptanceCriteria>
+</Trigger>
