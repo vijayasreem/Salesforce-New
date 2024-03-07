@@ -1,0 +1,77 @@
+
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <name>Loan_Application__c</name>
+    <label>Loan Application</label>
+    <pluralLabel>Loan Applications</pluralLabel>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ReadWrite</sharingModel>
+    <nameField>
+        <label>Loan Application Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <fields>
+        <fullName>Applicant__c</fullName>
+        <label>Applicant</label>
+        <type>Lookup</type>
+        <referenceTo>Account</referenceTo>
+        <required>true</required>
+    </fields>
+    <fields>
+        <fullName>Credit_Score__c</fullName>
+        <label>Credit Score</label>
+        <type>Number</type>
+        <required>true</required>
+    </fields>
+    <fields>
+        <fullName>Financial_History__c</fullName>
+        <label>Financial History</label>
+        <type>Text</type>
+        <required>true</required>
+    </fields>
+    <fields>
+        <fullName>Loan_Amount__c</fullName>
+        <label>Loan Amount</label>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Interest_Rate__c</fullName>
+        <label>Interest Rate</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Pre_Qualification_Outcome__c</fullName>
+        <label>Pre-Qualification Outcome</label>
+        <type>LongTextArea</type>
+    </fields>
+</CustomObject>
+
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <name>Credit_Check__c</name>
+    <label>Credit Check</label>
+    <pluralLabel>Credit Checks</pluralLabel>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ReadWrite</sharingModel>
+    <nameField>
+        <label>Credit Check Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <fields>
+        <fullName>Applicant__c</fullName>
+        <label>Applicant</label>
+        <type>Lookup</type>
+        <referenceTo>Account</referenceTo>
+        <required>true</required>
+    </fields>
+    <fields>
+        <fullName>Credit_Score__c</fullName>
+        <label>Credit Score</label>
+        <type>Number</type>
+        <required>true</required>
+    </fields>
+    <fields>
+        <fullName>Financial_History__c</fullName>
+        <label>Financial History</label>
+        <type>Text</type>
+        <required>true</required>
+    </fields>
+</CustomObject>
