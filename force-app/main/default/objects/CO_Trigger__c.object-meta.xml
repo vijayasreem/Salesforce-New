@@ -1,0 +1,126 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <name>Loan__c</name>
+    <label>Loan</label>
+    <pluralLabel>Loans</pluralLabel>
+    <nameField>
+        <label>Loan Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <fields>
+        <fullName>Status__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Offer_Accepted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Offer Accepted</label>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Disbursed_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Disbursed Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Approved_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Approved Amount</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Disbursed_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Disbursed Amount</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Recipient__c</fullName>
+        <externalId>false</externalId>
+        <label>Recipient</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Car Dealer</fullName>
+                    <default>false</default>
+                    <label>Car Dealer</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Car_Dealer_Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Car Dealer Account</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+        <lookupFilter>
+            <active>true</active>
+            <booleanFilter>1 OR 2</booleanFilter>
+            <criteriaItems>
+                <field>Recipient__c</field>
+                <operation>equals</operation>
+                <value>Car Dealer</value>
+            </criteriaItems>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+    </fields>
+    <fields>
+        <fullName>Borrower_Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Borrower Account</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+        <lookupFilter>
+            <active>true</active>
+            <booleanFilter>1 OR 2</booleanFilter>
+            <criteriaItems>
+                <field>Recipient__c</field>
+                <operation>notEquals</operation>
+                <value>Car Dealer</value>
+            </criteriaItems>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+    </fields>
+    <fields>
+        <fullName>Recipient_Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Recipient Account</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+        <referenceTo>Account</referenceTo>
+    </fields>
+</CustomObject>
