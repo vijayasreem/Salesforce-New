@@ -1,0 +1,20 @@
+
+<Trigger>
+    <UserStory>
+        <As>A customer</As>
+        <IWant>To be able to apply for a loan through multiple channels</IWant>
+        <SoThat>For convenience and accessibility</SoThat>
+    </UserStory>
+    <AcceptanceCriteria>
+        <Criterion>The loan application process should be available in-person at a branch, on the bank's website, and through a mobile app.</Criterion>
+        <Criterion>The application process should be streamlined and allow for the submission of all necessary documents, including identification, proof of income, credit history, and employment details.</Criterion>
+        <Criterion>The application should be accessible and user-friendly on all channels, with clear instructions and prompts guiding the customer through each step.</Criterion>
+        <Criterion>The customer should receive timely updates on the status of their loan application, including progress updates on document verification, credit check, and pre-qualification.</Criterion>
+        <Criterion>The customer should have the option to provide additional information or clarification during the application process, reducing delays in the approval process.</Criterion>
+        <Criterion>The customer should be informed about the outcome of their loan application, including the approved loan amount, interest rate, and repayment period, in a clear and understandable manner.</Criterion>
+        <Criterion>The customer should have the option to accept or decline the loan offer, either electronically or by signing physical documents.</Criterion>
+        <Criterion>Once the loan offer is accepted, the customer should receive timely disbursement of the approved loan amount, with clear communication on the disbursement process.</Criterion>
+        <Criterion>The customer should have access to customer support throughout the loan application process, with the ability to contact the bank for any queries or concerns and receive prompt and helpful assistance.</Criterion>
+        <Criterion>The customer should have the option to provide feedback on their loan application experience, allowing the bank to improve their processes and enhance customer satisfaction.</Criterion>
+    </AcceptanceCriteria>
+</Trigger>
