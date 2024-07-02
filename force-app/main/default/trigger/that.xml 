@@ -1,0 +1,56 @@
+
+<Triggers>
+  <Trigger name="WHEN-MOUSE-DOUBLECLICK">
+    <Conditions>
+      <!-- Define conditions for the trigger -->
+    </Conditions>
+    <Actions>
+      <!-- Define actions to be performed when the trigger is fired -->
+    </Actions>
+  </Trigger>
+  
+  <Trigger name="WHEN-MOUSE-CLICK">
+    <Conditions>
+      <!-- Define conditions for the trigger -->
+    </Conditions>
+    <Actions>
+      <!-- Define actions to be performed when the trigger is fired -->
+    </Actions>
+  </Trigger>
+  
+  <Trigger name="KEY-NEXT-ITEM">
+    <Conditions>
+      <!-- Define conditions for the trigger -->
+    </Conditions>
+    <Actions>
+      <!-- Define actions to be performed when the trigger is fired -->
+    </Actions>
+  </Trigger>
+  
+  <Trigger name="WHEN-VALIDATE-ITEM">
+    <Conditions>
+      <!-- Define conditions for the trigger -->
+    </Conditions>
+    <Actions>
+      <!-- Define actions to be performed when the trigger is fired -->
+    </Actions>
+  </Trigger>
+  
+  <Trigger name="WHEN-BUTTON-PRESSED">
+    <Conditions>
+      <!-- Define conditions for the trigger -->
+    </Conditions>
+    <Actions>
+      <!-- Define actions to be performed when the trigger is fired -->
+    </Actions>
+  </Trigger>
+  
+  <Trigger name="WHEN-NEW-FORM-INSTANCE">
+    <Conditions>
+      <!-- Define conditions for the trigger -->
+    </Conditions>
+    <Actions>
+      <!-- Define actions to be performed when the trigger is fired -->
+    </Actions>
+  </Trigger>
+</Triggers>
